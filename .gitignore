@@ -1,0 +1,23 @@
+# Python virtual environments
+.venv/
+venv/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing
+.pytest_cache/
+
+# VS Code local settings
+.vscode/
+
+# Environment variables
+.env
+
+# Operating system files
+.DS_Store
+Thumbs.db
