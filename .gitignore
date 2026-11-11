@@ -21,3 +21,10 @@ __pycache__/
 # Operating system files
 .DS_Store
 Thumbs.db
+# Packaging / build output
+*.egg-info/
+build/
+dist/
+
+# Generated figures (re-create with the scripts in examples/)
+results/*.png

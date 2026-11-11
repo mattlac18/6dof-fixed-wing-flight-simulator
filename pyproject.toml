@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flightsim"
+version = "0.1.0"
+description = "Nonlinear 6-DOF fixed-wing flight dynamics simulator"
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [{ name = "Matthew Lac" }]
+dependencies = [
+    "numpy>=2.1",
+    "scipy>=1.14",
+    "matplotlib>=3.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "jupyter"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
